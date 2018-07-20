@@ -49,7 +49,11 @@ class LibraryCourse extends Component {
                     id={this.props.id} 
                     className="library-course__arrow"
                 />
-                <Action onClick={() => this.props.toggleEnrolled(this.props.id)} className="library-course__action"/>
+                <Action
+                id={this.props.id}
+                onClick={() => this.props.toggleEnrolled(this.props.id)} 
+                className="library-course__action"
+                />
                 { this.renderDescription() }
             </div>
         );
